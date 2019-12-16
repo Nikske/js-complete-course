@@ -12,5 +12,8 @@
 (function() {
 
     // your code here
-
+    var outputname;
+    var inputname = prompt("Gies yer name");
+    outputname = "Hello," + inputname;
+    alert (outputname);
 })();

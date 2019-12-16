@@ -12,5 +12,12 @@
 (function() {
 
   // your code here
+    var cake;
+    if (confirm("You want some of this delicious cake?")) {
+        cake = "Alright, fine.";
+    } else {
+        cake = "Your loss.";
+    }
+    alert(cake);
 
 })();
