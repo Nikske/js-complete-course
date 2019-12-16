@@ -9,10 +9,20 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-function test() {
-    return true;
-}
-
 (function() {
+    switch (expression goes here) {
+        case 0:
+            // code ting innit
+        break;
+        case 1:
+            // code
+        break;
+        case 2:
+            // code
+        break;
+        case 3:
+            // code
+        break;
+    }
     return true;
 })();
