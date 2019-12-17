@@ -13,6 +13,6 @@
     let whatever = "hello world!!!";
     alert(whatever);
     // your code here
-    var scream= "Hello, World !";
+    let scream= "Hello, World !";
     alert(scream);
 })();

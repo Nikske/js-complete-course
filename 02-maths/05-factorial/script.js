@@ -16,7 +16,17 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
-
+        let i;
+        let fctr = 1;
+        let inputnum = document.getElementById("number").value;
+        // Function to calculate factorial, starting at the input number and substracting one each time.
+        function factor(num) {
+            for (i = num; i>1; i--) {
+                fctr *=i;
+            }
+            return fctr;
+        }
+        alert(factor(inputnum));
     });
 
 })();

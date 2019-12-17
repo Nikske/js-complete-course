@@ -12,15 +12,15 @@
 (function check() {
 
     // your code here
-        var information;
+        let information;
         // Ask every piece of info required
-        var inputAge = prompt("Your age:");
-        var inputGender = prompt("Your gender:");
-        var inputTown = prompt("Your town:");
-        // Fill the information variable with said info
+        let inputAge = prompt("Your age:");
+        let inputGender = prompt("Your gender:");
+        let inputTown = prompt("Your town:");
+        // Fill the information letiable with said info
         information = inputAge + "\n" + inputGender + "\n" + inputTown + "\n Confirm whether this information is correct";
         // And then ask whether it's all good
-        var confirmation = confirm(information);
+        let confirmation = confirm(information);
         // If it is, everything is good
         if (confirmation == true) {
             alert("You have confirmed");

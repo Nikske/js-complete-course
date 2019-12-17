@@ -12,7 +12,7 @@
 (function() {
 
   // your code here
-    var cake;
+    let cake;
     if (confirm("You want some of this delicious cake?")) {
         cake = "Alright, fine.";
     } else {

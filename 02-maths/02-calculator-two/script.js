@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
-    var buttonpress =
+    let buttonpress;
     switch (buttonpress) {
         case addition:
             // code ting innit
