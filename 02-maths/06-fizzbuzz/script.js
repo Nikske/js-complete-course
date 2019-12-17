@@ -12,5 +12,17 @@
 (function() {
 
     // your code here
+    for (let i = 1; i <=100; i++) {
+        // If the number is a multiple of both 3 & 5
+        if (i % 3 === 0 &&  i % 5 === 0) {
+            console.log("fizzbuzz");
+        } else if (i % 3 === 0) {
+            console.log("fizz");
+        } else if (i % 5 === 0) {
+            console.log("buzz");
+        } else {
+            console.log(i);
+        }
+    }
 
 })();
