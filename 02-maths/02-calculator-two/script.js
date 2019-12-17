@@ -12,7 +12,7 @@
 function pressed(x) {
     let numberOne = Number(document.getElementById("op-one").value);
     let numberTwo = Number(document.getElementById("op-two").value);
-    // Go through possible outcomes
+    // Go through 4 possible outcomes
     switch (x) {
         case "addition":
             alert (numberOne + numberTwo);

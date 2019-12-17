@@ -9,8 +9,21 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+function pressed(x) {
 
-    // your code here
+    switch (x) {
+        case "red":
+            document.body.style.backgroundColor = "red";
+            break;
+        case "green":
+            document.body.style.backgroundColor = "green";
+            break;
+        case "yellow":
+            document.body.style.backgroundColor = "yellow";
+            break;
+        case "blue":
+            document.body.style.backgroundColor = "blue";
+            break;
+    }
 
-})();
+}
