@@ -14,9 +14,10 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
-        var i;
-        var sqr = 0;
-        var results= " ";
+        let i;
+        let sqr = 0;
+        let results= " ";
+        // Start at one, keep going and adding one until you hit 21
         for (i = 1; i<=21; i++) {
             sqr = i * i;
             results +=  sqr + "\n";

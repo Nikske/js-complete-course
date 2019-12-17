@@ -16,7 +16,12 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
-
+        let numbers = document.getElementById("numbers").value;
+        // Split each input after the ','
+        let sorting = numbers.split(",");
+        // Sort in ascending order.
+        sorting.sort(function(a, b){return a-b});
+        alert(sorting);
     });
 
 })();
