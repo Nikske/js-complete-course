@@ -9,21 +9,22 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-    let buttonpress;
-    switch (buttonpress) {
-        case addition:
-            // code ting innit
+function pressed(x) {
+    let numberOne = Number(document.getElementById("op-one").value);
+    let numberTwo = Number(document.getElementById("op-two").value);
+    // Go through possible outcomes
+    switch (x) {
+        case "addition":
+            alert (numberOne + numberTwo);
         break;
-        case 1:
-            // code
+        case "substraction":
+            alert (numberOne - numberTwo);
         break;
-        case 2:
-            // code
+        case "multiplication":
+            alert (numberOne * numberTwo);
         break;
-        case 3:
-            // code
+        case "division":
+            alert (numberOne / numberTwo);
         break;
     }
-    return true;
-})();
+}

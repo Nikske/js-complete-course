@@ -40,10 +40,11 @@
                             <input type="text" name="op-two" id="op-two" />
                         </div>
                         <div class="actions">
-                            <button type="button" class="operator" id="addition">+</button>
-                            <button type="button" class="operator" id="substraction">-</button>
-                            <button type="button" class="operator" id="multiplication">×</button>
-                            <button type="button" class="operator" id="division">÷</button>
+                            <!-- adding onclick function inline to understand which button was pressed -->
+                            <button type="button" class="operator" id="addition" onclick="pressed(this.id)">+</button>
+                            <button type="button" class="operator" id="substraction" onclick="pressed(this.id)">-</button>
+                            <button type="button" class="operator" id="multiplication" onclick="pressed(this.id)">×</button>
+                            <button type="button" class="operator" id="division" onclick="pressed(this.id)">÷</button>
                         </div>
                     </form>
                 </section>
