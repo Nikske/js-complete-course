@@ -13,13 +13,18 @@
 
     // your code here
         var information;
+        // Ask every piece of info required
         var inputAge = prompt("Your age:");
         var inputGender = prompt("Your gender:");
         var inputTown = prompt("Your town:");
+        // Fill the information variable with said info
         information = inputAge + "\n" + inputGender + "\n" + inputTown + "\n Confirm whether this information is correct";
+        // And then ask whether it's all good
         var confirmation = confirm(information);
+        // If it is, everything is good
         if (confirmation == true) {
             alert("You have confirmed");
+        // If it's not, rerun the entire function from the start
         } else {
             alert("Give us the correct info then.");
             check();

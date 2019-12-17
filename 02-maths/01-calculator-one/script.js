@@ -14,12 +14,15 @@
 
     document.getElementById("addition").addEventListener("click", function() {
         // perform an addition
-
+        // Get the input numbers
         var add1 = document.getElementById("op-one").value;
         var add2 = document.getElementById("op-two").value;
+        // Convert them into actual numbers from strings
         var add1int = Number(add1);
         var add2int = Number(add2);
+        // Actually do the maths
         var result = add1int + add2int;
+        // Display the maths
         alert(result);
     });
 

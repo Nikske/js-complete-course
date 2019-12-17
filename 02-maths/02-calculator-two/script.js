@@ -10,8 +10,9 @@
 // You will have time to focus on it later.
 
 (function() {
-    switch (expression goes here) {
-        case 0:
+    var buttonpress =
+    switch (buttonpress) {
+        case addition:
             // code ting innit
         break;
         case 1:

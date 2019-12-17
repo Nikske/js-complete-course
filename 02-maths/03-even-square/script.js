@@ -14,6 +14,14 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
+        var i;
+        var sqr = 0;
+        var results= " ";
+        for (i = 1; i<=21; i++) {
+            sqr = i * i;
+            results +=  sqr + "\n";
+        }
+        alert(results + "That's Numberwang !");
 
     });
 
