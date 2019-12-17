@@ -11,6 +11,10 @@
 
 (function() {
 
-    // your code here
-
+    // Function to have the thing run and apply the background colour
+    document.getElementById("run").addEventListener("click", function() {
+        // Getting the colour name from input
+        let color = document.getElementById("color").value;
+        document.body.style.backgroundColor = color;
+    });
 })();
