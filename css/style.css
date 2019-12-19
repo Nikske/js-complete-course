@@ -28,17 +28,7 @@ a:hover {
     color: #366d47;
 }
 
-section {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
 .divider {
-    display: inline-block;
     background-color: #63C58B;
-    width: 28%;
-    padding: 0.5%;
-    margin-right: 2%;
     border-radius: 5px;
 }
