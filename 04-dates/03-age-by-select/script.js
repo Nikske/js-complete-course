@@ -12,5 +12,10 @@
 (function() {
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", function() {
+        let day = document.getElementById("dob-day").value;
+        let month = document.getElementById("dob-month").value;
+        let year = document.getElementById("dob-year").value;
+        
+    });
 })();
