@@ -25,5 +25,15 @@
     ];
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", function() {
+        // Removes the last value in the array
+        fruits.pop(); //cerise
+        // Removes the first value in the array
+        fruits.shift(); //pomme
+        // Adding an item at the start of the array
+        fruits.unshift("banana");
+        // Adding a item at the end of the array
+        fruits.push("kiwi");
+        alert(fruits);
+    });
 })();
