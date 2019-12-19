@@ -90,5 +90,12 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        // Filter through the array, placing every person that's 18 years of age or older into the new array 'adult'
+        let adult = people.filter(name => {
+            return name.age >= 18;
+        });
 
+        console.log(adult)
+    });
 })();
