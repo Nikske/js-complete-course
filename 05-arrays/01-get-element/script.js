@@ -27,5 +27,9 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        let correctFruit = fruits[3];
+        console.log(correctFruit);
+    });
 
 })();
