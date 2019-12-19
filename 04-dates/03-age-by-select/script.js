@@ -13,9 +13,18 @@
 
     // your code here
     document.getElementById("run").addEventListener("click", function() {
+        // Values from dropdown fields
         let day = document.getElementById("dob-day").value;
         let month = document.getElementById("dob-month").value;
         let year = document.getElementById("dob-year").value;
-        
+        // Current date to check against the input fields
+        let currentDate = new Date();
+        let calcAge = currentDate.getFullYear() - year;
+        let calcMonth = currentDate.getMonth() - month;
+        //Check whether the input birthday has happened yet, if not decrease age by one. Thanks Talisa.
+        if (calcMonth < 0 || (calcMonth === 0 && currentDate.getDate() < day)) {
+            calcAge--;
+        }
+        alert(calcAge);
     });
 })();
