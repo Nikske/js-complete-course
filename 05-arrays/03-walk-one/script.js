@@ -27,5 +27,11 @@
     ];
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", function() {
+        let i;
+        // Go through the array until there's no more
+        for (i=0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+    });
 })();
