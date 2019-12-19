@@ -92,13 +92,13 @@
     // your code here
     document.getElementById("run").addEventListener("click", function() {
         let i;
+        // Run through the array
         for (i = 0; i < people.length; i++) {
-            if (people[i].firstname == "Jean" && people[i].lastname == "dupont") {
-                
+            //  Find the element in the array with first name Jean and last name Dupont
+            if (people[i].firstname == "Jean" && people[i].lastname == "Dupont") {
+                // i being the position
+                alert(people[i].email + " " + i);
             }
         }
-
-
-
     });
 })();
