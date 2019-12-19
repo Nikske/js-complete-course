@@ -15,8 +15,9 @@
 
     // your code here
     let currentDate = new Date();
+    // Options to edit the way you want to display your string
     let options = {hour12:false, weekday:'long', year:'numeric', month:'long', day:'numeric', hour:'numeric', minute:'numeric'};
-
+    // Setting locale to england and including the options variable
     document.getElementById("target").innerHTML = (currentDate.toLocaleString('en-UK', options));
 
 })();
