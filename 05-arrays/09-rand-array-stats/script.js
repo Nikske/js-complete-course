@@ -12,5 +12,8 @@
 (function() {
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", function() {
+        let randomArray = Array(10).fill().map(() => Math.round(Math.random() * 100));
+        console.log(randomArray);
+    });
 })();
