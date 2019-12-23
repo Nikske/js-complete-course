@@ -12,5 +12,15 @@
 (function() {
 
     // your code here
+    // Collect all info of img tags in a variable
+    let hoverImage = document.getElementsByTagName("img");
 
+    // Hover, change src attribute in variable image
+    hoverImage[0].addEventListener("mouseenter", function () {
+        hoverImage[0].setAttribute("src", "../../_shared/img/kiss-wink-heart.svg");
+    });
+    // Change back to original image after the mouse leaves.
+    hoverImage[0].addEventListener("mouseleave", function() {
+        hoverImage[0].setAttribute("src", "../../_shared/img/kiss.svg");
+    });
 })();
