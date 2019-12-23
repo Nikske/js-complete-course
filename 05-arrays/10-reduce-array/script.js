@@ -91,7 +91,13 @@
 
     // your code here
     document.getElementById("run").addEventListener("click", function() {
-        let ages = [];
-
+        // Get all age values
+       function getAges(total, varAge) {
+            total += varAge.age;
+            return total;
+       }
+       // Boil 'em all down to one big number
+       let totalAges = people.reduce(getAges, 0);
+       console.log(totalAges);
     });
 })();
