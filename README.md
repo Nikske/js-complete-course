@@ -2,4 +2,3 @@
 
 :finnadie:
 
-Currently working on 05 - Arrays.
