@@ -29,5 +29,7 @@
     ];
 
     // your code here
-
+    // Create a new variable with only unique values
+    let dedupe = [...new Set(fruits)];
+    console.log(dedupe);
 })();
