@@ -12,5 +12,6 @@
 (function() {
 
     // your code here
-
+    document.getElementById("target").innerHTML = "<tr><td>row</td></tr>";
+    // Can't copy paste <tr>... etc. 10 times, need a better system
 })();
