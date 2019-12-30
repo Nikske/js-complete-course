@@ -12,6 +12,13 @@
 (function() {
 
     // your code here
-    document.getElementById("target").innerHTML = "<tr><td>row</td></tr>";
-    // Can't copy paste <tr>... etc. 10 times, need a better system
+    // Create table and place it in the #target div
+    let table = document.createElement("table");
+    document.getElementById("target").appendChild(table);
+
+    // Create 10 rows
+    for(let rows = 0; rows < 10; rows++){
+        let row = table.insertRow(0);
+        let cell = row.insertCell(0);
+    }
 })();
