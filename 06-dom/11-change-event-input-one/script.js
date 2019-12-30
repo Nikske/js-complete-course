@@ -12,5 +12,17 @@
 (function() {
 
     // your code here
+    // Set the max length of the input to 10
+    let pwOne = document.getElementById("pass-one");
+    pwOne.setAttribute("maxlength", '10');
+
+    //
+    pwOne.addEventListener("keyup", update);
+
+    function update(pwOne){
+        console.log(pwOne);
+        let number = pwOne.length;
+        document.getElementById("counter").innerHTML = number + "/10";
+    }
 
 })();
