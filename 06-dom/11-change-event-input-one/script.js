@@ -16,12 +16,13 @@
     let pwOne = document.getElementById("pass-one");
     pwOne.setAttribute("maxlength", '10');
 
-    //
+    // Add keyup to input field, running the update function.
     pwOne.addEventListener("keyup", update);
 
-    function update(pwOne){
-        console.log(pwOne);
-        let number = pwOne.length;
+    // Get the length of the target of the event (input field) and update the number in html each time a key is released.
+    function update(long){
+        console.log(long);
+        let number = long.currentTarget.value.length;
         document.getElementById("counter").innerHTML = number + "/10";
     }
 
