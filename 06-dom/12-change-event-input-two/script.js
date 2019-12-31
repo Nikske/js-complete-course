@@ -12,5 +12,23 @@
 (function() {
 
     // your code here
+    // Add keyup to input to run update function
+    let pwOne = document.getElementById("pass-one");
+    pwOne.addEventListener("keyup", update);
 
+    function update(long){
+        // Length of the input, to check if it's at least 8 chars long
+        let inputLength = long.currentTarget.value.length;
+        // Actual value of the input, to check if it has at least 2 numbers
+        let inputValue = long.currentTarget.value;
+        // Using Regex to check for 2 numbers
+        let inputNumbers = new RegExp("[0-9].*[0-9]");
+        // Check if both the statements are correct, otherwise the input field is sad
+        if(inputLength >= 8 && inputNumbers.test(inputValue)){
+            document.getElementById("validity").innerHTML = ":)";
+        } else {
+            document.getElementById("validity").innerHTML = ":(";
+        }
+
+    }
 })();
