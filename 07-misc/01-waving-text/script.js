@@ -19,4 +19,5 @@
     // Put every letter separately into an array
     textP = textP.split("");
     console.log(textP);
+
 })();
