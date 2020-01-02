@@ -12,5 +12,14 @@
 (function() {
 
     // your code here
+    let slider = document.getElementById("slider");
+    let target = document.getElementById("target");
+    // Set the starting value to slider location
+    target.innerHTML = "0" + slider.value;
+
+    // Update value when you slide the slider
+    slider.oninput = function() {
+        target.innerHTML = "0" + this.value;
+    }
 
 })();
