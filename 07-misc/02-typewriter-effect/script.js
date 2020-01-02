@@ -12,5 +12,19 @@
 (function() {
 
     // your code here
+    let targetP = document.getElementById("target").innerHTML;
+    // Empty the text p to make way for the typewriting
+    document.getElementById("target").innerHTML = "";
 
+    let i = 0;
+    function typewriter() {
+        if (i < targetP.length) {
+            // Display each letter individually with a random speed
+            document.getElementById("target").innerHTML += targetP.charAt(i);
+            i++;
+            let speed = Math.random() * 700;
+            setTimeout(typewriter,speed);
+        }
+    }
+    typewriter();
 })();
