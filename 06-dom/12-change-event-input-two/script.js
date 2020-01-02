@@ -23,6 +23,7 @@
         let inputValue = long.currentTarget.value;
         // Using Regex to check for 2 numbers
         let inputNumbers = new RegExp("[0-9].*[0-9]");
+
         // Check if both the statements are correct, otherwise the input field is sad
         if(inputLength >= 8 && inputNumbers.test(inputValue)){
             document.getElementById("validity").innerHTML = ":)";

@@ -12,5 +12,11 @@
 (function() {
 
     // your code here
+    // Fontsize variables
+    let targetP = document.getElementById("target");
 
+    let textP = targetP.innerText;
+    // Put every letter separately into an array
+    textP = textP.split("");
+    console.log(textP);
 })();
