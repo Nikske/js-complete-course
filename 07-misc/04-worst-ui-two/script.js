@@ -14,14 +14,13 @@
     // your code here
     let p1 = "460"; let p2 = "00"; let p3 = "00"; let p4 = "00";
     let target = document.getElementById("target");
-    let output = "0" + p1 + p2 + p3 + p4;
-    target.innerHTML = output;
+    target.innerHTML = "0" + p1 + p2 + p3 + p4;
 
     // button #1
     document.getElementById("part-one").addEventListener("click", function() {
         // Random number between 466 to 499. 33+466 = 499
         p1 = Math.round((Math.random() * 33) + 466);
-        target.innerHTML = output;
+        target.innerHTML = "0" + p1 + p2 + p3 + p4;
     });
     // button #2
     document.getElementById("part-two").addEventListener("click", function() {
@@ -30,24 +29,22 @@
         if (p2 < 10) {
             p2 = "0" + p2;
         }
-        target.innerHTML = output;
+        target.innerHTML = "0" + p1 + p2 + p3 + p4;
     });
     // button #3
     document.getElementById("part-three").addEventListener("click", function() {
-        // Random number between 0 - 99, if it's a single digit add a 0 on the front
         p3 = Math.round(Math.random() * 99);
         if (p3 < 10) {
             p3 = "0" + p3;
         }
-        target.innerHTML = output;
+        target.innerHTML = "0" + p1 + p2 + p3 + p4;
     });
     // button #4
     document.getElementById("part-four").addEventListener("click", function() {
-        // Random number between 0 - 99, if it's a single digit add a 0 on the front
         p4 = Math.round(Math.random() * 99);
         if (p4 < 10) {
             p4 = "0" + p4;
         }
-        target.innerHTML = output;
+        target.innerHTML = "0" + p1 + p2 + p3 + p4;
     });
 })();
