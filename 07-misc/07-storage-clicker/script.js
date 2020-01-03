@@ -13,12 +13,15 @@
 
     // your code here
     let target = document.getElementById("target").innerHTML;
+    // Adding 1 to the target number each time, storing it and updating the target p
     document.getElementById("increment").addEventListener("click", function() {
         target++;
         localStorage.setItem("stored", target);
         document.getElementById("target").innerHTML = target;
     });
-
+    // Retrieve the stored number
     target = localStorage.getItem("stored");
+    // Make sure the stored number appears instead of 0
+    document.getElementById("target").innerHTML = target;
 
 })();
