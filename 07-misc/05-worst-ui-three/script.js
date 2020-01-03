@@ -20,7 +20,8 @@
     document.getElementById("fix-part-one").addEventListener("click", function() {
         // Random number between 466 to 499. 33+466 = 499
         p1 = Math.round((Math.random() * 33) + 466);
-        document.getElementById("part-one").setAttribute("value", p1);
+        // Display the randomised number into the input field
+        document.getElementById("part-one").value = p1;
         target.innerHTML = "0" + p1 + p2 + p3 + p4;
     });
     // button #2
@@ -30,6 +31,7 @@
         if (p2 < 10) {
             p2 = "0" + p2;
         }
+        document.getElementById("part-two").value = p2;
         target.innerHTML = "0" + p1 + p2 + p3 + p4;
     });
     // button #3
@@ -38,6 +40,7 @@
         if (p3 < 10) {
             p3 = "0" + p3;
         }
+        document.getElementById("part-three").value = p3;
         target.innerHTML = "0" + p1 + p2 + p3 + p4;
     });
     // button #4
@@ -46,6 +49,7 @@
         if (p4 < 10) {
             p4 = "0" + p4;
         }
+        document.getElementById("part-four").value = p4;
         target.innerHTML = "0" + p1 + p2 + p3 + p4;
     });
 })();
