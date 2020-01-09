@@ -11,4 +11,25 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        fetch("../../_shared/api.json").then((response) => {
+            return response.json();
+        })
+            .then((data) => {
+                let heroes = data.heroes;
+                heroes.forEach(function (element) {
+                    let heroesTable = document.getElementById("tpl-hero");
+                    let heroId = document.getElementById("hero-id").value;
+                    let clone = heroesTable.content.cloneNode(true);
+                    // If the input value matches one of the hero's index, display their info
+                    if (heroId == element.id) {
+                        clone.querySelector(".name").innerHTML = "'" + element.name + "'";
+                        clone.querySelector(".alter-ego").innerHTML = element.alterEgo;
+                        clone.querySelector(".powers").innerHTML = element.abilities;
+                        document.getElementById("target").appendChild(clone);
+                    }
+                })
+
+            })
+    });
 })();

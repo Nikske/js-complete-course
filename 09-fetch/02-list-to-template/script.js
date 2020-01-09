@@ -26,7 +26,6 @@
                     clone.querySelector(".powers").innerHTML = element.abilities;
                     document.getElementById("target").appendChild(clone);
                 })
-
             })
     });
 })();
