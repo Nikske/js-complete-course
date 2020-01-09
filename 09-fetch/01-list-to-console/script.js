@@ -11,4 +11,14 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+       fetch("../../_shared/api.json").then((heroes) => {
+           // json() method to retrieve the actual JSON body content
+                return heroes.json();
+           })
+           .then((message) => {
+                console.log(message);
+           })
+
+    });
 })();
