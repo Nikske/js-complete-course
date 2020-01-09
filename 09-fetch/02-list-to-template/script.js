@@ -11,4 +11,22 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        fetch("../../_shared/api.json").then((response) => {
+            return response.json();
+        })
+            .then((data) => {
+                let heroes = data.heroes;
+                // For each element in the heroes table inside the json, duplicate it and fill it correctly
+                heroes.forEach(function (element) {
+                    let heroesTable = document.getElementById("tpl-hero");
+                    let clone = heroesTable.content.cloneNode(true);
+                    clone.querySelector(".name").innerHTML = "'" + element.name + "'";
+                    clone.querySelector(".alter-ego").innerHTML = element.alterEgo;
+                    clone.querySelector(".powers").innerHTML = element.abilities;
+                    document.getElementById("target").appendChild(clone);
+                })
+
+            })
+    });
 })();
